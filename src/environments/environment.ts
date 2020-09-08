@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: "AIzaSyCADbC4L5ZPBB4ldJGOEMzo1Io8fJdo4b8",
+    authDomain: "twisttapi.firebaseapp.com",
+    databaseURL: "https://twisttapi.firebaseio.com",
+    projectId: "twisttapi",
+    storageBucket: "twisttapi.appspot.com",
+    messagingSenderId: "1084214735597",
+    appId: "1:1084214735597:web:d69695fffb34f4189a92e4",
+  },
 };
 
 /*

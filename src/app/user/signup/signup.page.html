@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>signup</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+
+    <ion-item style="margin-bottom: 20px;">
+      <ion-label position="floating">Numero de téléphone</ion-label>
+      <ion-input type="text" [(ngModel)]="user.telephone" clearInput></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email" [(ngModel)]="user.email" clearInput></ion-input>
+    </ion-item>
+
+    <ion-item style="margin-bottom: 20px;">
+      <ion-label position="floating">Mot de passe</ion-label>
+      <ion-input type="password" [(ngModel)]="user.password" clearInput></ion-input>
+    </ion-item>
+
+
+    <ion-button expand="block" (click)="register()">
+      <ion-icon name="person" slot="start"></ion-icon>
+      Connexion
+    </ion-button>
+  </ion-list>
+  <ion-item style="margin-top: 10px;" lines="none" routerLink="/signup">
+    <ion-label slot="end">
+      <p>Creer un compte</p>
+    </ion-label>
+  </ion-item>
+
+  <!-- <ion-list>
+    <ion-item *ngFor="let user of allUsers">
+      <ion-label>
+        <h2>{{ user.email }}</h2>
+      </ion-label>
+    </ion-item>
+  </ion-list> -->
+</ion-content>
